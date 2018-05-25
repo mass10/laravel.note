@@ -3,26 +3,31 @@
 ##### Ubuntu
 
 ```
-$ sudo apt-get install apache2
-$ sudo a2enmod rewrite
-$ sudo service apache2 restart
+sudo apt-get install apache2
+sudo a2enmod rewrite
+sudo service apache2 restart
 ```
 
+# PHP 7 をインストール (at Ubuntu 18 LTS Server)
+
+```
+sudo apt install php
+```
 
 # Composer を設置
 
 composer を任意のディレクトリにダウンロードして
 
 ```
-$ wget https://getcomposer.org/installer
+wget https://getcomposer.org/installer
 ```
 
 実行
 
 ```
-$ php installer
-$ mv composer.phar composer
-$ mv composer /usr/local/bin/
+php installer
+mv composer.phar composer
+sudo mv composer /usr/local/bin/
 ```
 
 # Laravel をインストールする
@@ -30,7 +35,7 @@ $ mv composer /usr/local/bin/
 ※Do not run Composer as root/super user! See https://getcomposer.org/root for details
 
 ```
-$ composer global require "laravel/installer"
+composer global require "laravel/installer"
 ```
 
 composer global require "laravel/installer=~1.1"
@@ -39,9 +44,9 @@ composer global require "laravel/installer=~1.1"
 # スケルトンを作成
 
 ```
-$ PATH=$PATH:~/.config/composer/vendor/bin/
-$ laravel new myapp1
-$ laravel new myapp1 5.0
+PATH=$PATH:~/.config/composer/vendor/bin/
+laravel new myapp1
+laravel new myapp1 5.0
 ```
 
 
