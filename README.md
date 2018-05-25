@@ -12,6 +12,7 @@ sudo service apache2 restart
 
 ```
 sudo apt install php
+sudo apt install php-zip
 ```
 
 # Composer を設置
@@ -78,7 +79,7 @@ php artisan serve --port=8080
 
 
 
-# Problem - laravel/installer v2.0.1 requires ext-zip * -> the requested PHP extension zip is missing from your system.
+# [Problem] laravel/installer v2.0.1 requires ext-zip * -> the requested PHP extension zip is missing from your system.
 
 composer global require "laravel/installer" が失敗した場合。
 
@@ -86,7 +87,7 @@ composer global require "laravel/installer" が失敗した場合。
 sudo apt install php7.0-zip
 ```
 
-# Problem - PHP Warning:  require(......./autoload.php): failed to open stream: No such file or directory
+# [Problem] PHP Warning:  require(......./autoload.php): failed to open stream: No such file or directory
 
 ```
 USERNAME@ubuntu:~/workspace/laravel.note/code/example1$ php artisan serve --port=8080
