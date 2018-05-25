@@ -45,7 +45,7 @@ composer global require "laravel/installer=~1.1"
 # スケルトンを作成
 
 ```
-PATH=$PATH:~/.config/composer/vendor/bin/
+PATH=$PATH:~/.config/composer/vendor/bin
 laravel new myapp1
 laravel new myapp1 5.0
 ```
