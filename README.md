@@ -13,6 +13,8 @@ sudo service apache2 restart
 ```
 sudo apt install php
 sudo apt install php-zip
+sudo apt install php-mbstring
+sudo apt install php-dom
 ```
 
 # Composer を設置
