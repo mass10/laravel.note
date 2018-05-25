@@ -76,7 +76,7 @@ $ sudo service apache2 restart
 # running internal server
 
 ```
-php artisan serve --port=8080
+php artisan serve --port=8080 --host=0.0.0.0
 ```
 
 
