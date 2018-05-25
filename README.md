@@ -50,6 +50,9 @@ composer global require "laravel/installer=~1.1"
 PATH=$PATH:~/.config/composer/vendor/bin
 laravel new myapp1
 laravel new myapp1 5.0
+cd myapp1
+composer update
+php artisan key:generate
 ```
 
 
